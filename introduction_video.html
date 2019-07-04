@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Introduction - VeriSIM</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -17,14 +23,27 @@
 	<div class="container-fluid">
 		<!-- <h5>Welcome to the VeriSIM Learning Environment</h5> -->
 		<div class="row">
-			<div class="col-12 intro">
+			<div class="col-sm-12 intro">
+				<!-- Introduction (Write your presentation part here while adding the reveal.js, remove the replace div and add your reveal js) -->
 				<div class="replace-div">
-					<iframe src="https://h5p.org/h5p/embed/456863" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					<div class="reveal">
+						<div class="slides">
+							<section> <!-- This is same as the slide you have created. No change. Just skip the initiation presentation slide before this -->
+								(This is same as the slide you have created. No change. Just skip the initiation presentation slide before this)<img src="img/01neha.png">
+							</section>
+							<section><!-- This is same as the slide you have created. Some change in text -->
+								(This is same as the slide you have created. No change.)<img src="img/02-veritas.png">
+							</section>
+							<section>
+								<p>Video appears here <br> The end of the video will contain an instruction to click next to proceed. This will then take the learner directly to the dashboard</p>
+							</section>
+						</div>
+					</div>
 				</div>
+				<button type="button" class="btn btn-success" onclick="location.href='dashboard.html'">Next</button>
 			</div>
 		</div>
 	</div>
-	<button type="button" class="btn btn-success" onclick="location.href='introduction_video.html'">Next</button>
 </section>
 <footer class="intro-footer">
 	<h6>Footer</h6>
@@ -33,5 +52,12 @@
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/umd/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<iframe src="https://h5p.org/h5p/embed/456863" width="1090" height="745" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>-->
 		
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize();
+		</script>
 </html>
